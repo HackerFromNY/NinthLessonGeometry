@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Вычисление параметров фигур"
+        android:textColor="#056161"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:text="Введите ширину описывающего прямоугольника"
+        android:textColor="#056161"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"/>
+
+    <EditText
+        android:id="@+id/widthIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Ширина"
+        android:textColor="#056161"
+        android:background="#C3DADA"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="14dp"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:text="Введите длину описывающего прямоугольника"
+        android:textColor="#056161"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/widthIn"/>
+
+    <EditText
+        android:id="@+id/heightIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="Длина"
+        android:textColor="#056161"
+        android:background="#C3DADA"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="14dp"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
+        android:text="Рассчитать"
+        android:backgroundTint="#056161"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightIn" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:text="Результаты"
+        android:textColor="#056161"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"/>
+
+    <TextView
+        android:id="@+id/infoApp"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:hint="Данные о площадях и периметрах"
+        android:textColor="#056161"
+        android:background="#C3DADA"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:layout_marginTop="14dp"
+        android:padding="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
